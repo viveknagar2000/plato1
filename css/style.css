@@ -1,0 +1,1714 @@
+*{              
+            font-family: "open sans", sans-serif;
+}
+
+html{
+        scroll-behavior:smooth;
+}
+
+h1,h2,h3{
+        font-family: "Raleway", sans-serif;
+}
+
+span{
+        cursor: pointer;
+}
+
+i{
+        cursor: pointer;
+}
+
+body::-webkit-scrollbar{
+                                display: none;
+}
+
+/*---------------------------------------TOP----------------------------*/
+.top{   
+        background-image: linear-gradient(rgba(0, 0, 0, 0.647) , rgba(0, 0, 0, 0.696) ) , url("../img/hero-bg.jpg") ;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat ;
+        text-align: center ;  
+}
+
+.top h1{
+            color : white ;
+            padding-top : 140px ;
+            font-size: 60px ;
+}
+
+.top p{
+            color: gainsboro;
+            font-size: 27px ;
+            margin-top: -20px ;
+}
+
+.top button{   
+                padding: 8px 30px ;
+                margin-bottom: 150px;
+                color: azure ;
+                font-size: large ;
+                font-weight: bold ;
+                border : 2px solid rgb(66, 180, 112) ;
+                border-radius : 5px ;
+                background-color: transparent ;
+                transition: all 0.5s ease-in-out ;
+                cursor: pointer;
+}
+
+.top button:hover{ 
+                     background-color:  rgb(66, 180, 112) ;
+}  
+
+/*----------------------------animation-----------------*/
+
+.top h1 , .top p , .top button{
+                        animation-name: top;
+                        animation-duration: 1s;
+                        animation-iteration-count: 1;
+                        animation-timing-function: ease-in-out;
+}
+
+@keyframes top{
+        from{
+                transform: translateY(300px);
+                opacity: 0;
+        }
+
+        to{
+                transform: translatey();
+                opacity: 1;
+        }
+}
+
+/*==================MENUBAR==========================*/
+
+nav{
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        color: white;
+    }
+
+    nav a{
+        color: white;
+        text-decoration: none;
+    }
+
+    nav label{
+            font-size: 25px;
+            font-weight: bolder;
+            padding: 20px 0px 10px 50px;
+            font-family: "Raleway", sans-serif;
+    }
+
+    nav label:hover , nav a:hover{
+                color: rgb(66, 180, 112);
+                transition: all 0.5s ease-in-out;
+    }
+
+    .menu-bar{
+            padding: 0px 30px 0px 0px;
+            display: flex;
+            position: relative;
+    }
+
+    .menu-bar li{
+            padding: 10px 15px;
+            list-style: none;
+    }
+
+    .drop-down-list{
+            display: none;
+            line-height: 30px;
+            background-color: rgb(177, 232, 232);
+            position: absolute;
+            top: 40px;
+            right: 40px;
+    }
+
+    .drop-down:hover .drop-down-list{
+                        display: block;
+    }
+
+    .deep-drop-down-list{
+               
+                line-height: 30px;
+                background-color: rgb(177, 232, 232);
+                transition: all 0.5s ease-in-out;
+                position: absolute;
+                top: 54px;
+                right: 145px;
+                width: 160px;
+                opacity: 0;
+    }
+
+    .deep-drop-down:hover .deep-drop-down-list{
+                                    opacity: 1;
+    }
+
+    #menu-icon{
+                color: #42b470;
+                display: none;
+                font-size: 30px;
+    }
+
+/*==================ABOUT==========================*/
+
+.A{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 60px 0px 40px 0px;
+}
+
+.about-image{
+                width: 550px ;
+                height: 400px ;
+                margin-left: 50px;
+                background-image: url("../img/about.jpg");
+                background-repeat: no-repeat ;
+                background-position: center;
+                background-size: cover;
+                
+}
+
+.A span{
+                font-size: 40px;
+                color: rgb(66, 180, 112)  ;
+                text-align: left;
+                vertical-align: middle;
+                margin-bottom: -6px;
+
+}
+
+.about{             
+                    margin-left: 40px;
+        }
+
+.about h1{
+                color: rgb(79, 79, 79) ;
+                font-size: 35px;
+}
+
+.p1{
+            font-size: 18px;
+            color: rgb(99, 97, 97);
+}
+
+.pehla{
+                    display: inline-grid;
+                   
+}
+
+.dusra{
+                display: inline-grid;
+                margin-left: 80px;
+}
+
+.pp a{
+        margin-left: 45px;
+        margin-top: -10px;
+}
+
+/*----------------------------animation-----------------*/
+
+.about-image{
+        animation-name: about-image;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+}
+
+@keyframes about-image{
+        from{
+                transform: translatex(-60px);
+                opacity: 0;
+                }
+
+        to{
+                transform: translatex();
+                opacity: 1;
+        }
+   }
+
+
+.about h1 , .about p{
+        animation-name: about-text;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+}
+
+@keyframes about-text{
+        from{
+                transform: translateX(50px);
+                opacity: 0;
+                }
+
+        to{
+                transform: translateX();
+                opacity: 1;
+        }
+   }
+
+.about .pp{
+        animation-name: dono-div;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+}
+
+@keyframes dono-div{
+        from{
+                transform: scale(0);
+                opacity: 0;
+                }
+
+        to{
+                transform: scale(1);
+                opacity: 1;
+        }
+   }
+/*==================ICONS==========================*/
+
+
+
+.icons ul{
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                list-style-type: none;
+                background-image: linear-gradient(rgba(222, 222, 222, 0.802) , rgba(229, 229, 229, 0.829) ) ;
+                
+
+}
+
+
+
+.icons ul li img{
+                    width: 100px;
+                    margin: 30px 0px 20px 0px;
+                    filter:grayscale(100%);
+}
+
+
+.icons ul li img:hover{         filter: grayscale(0%);
+                                cursor: pointer;
+}
+
+/*----------------------------animation-----------------*/
+
+.icons ul li img{
+        animation-name: icons-image;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+}
+
+@keyframes icons-image{
+        from{
+                transform: scale(0);
+                opacity: 0;
+                }
+
+        to{
+                transform: scale(1);
+                opacity: 1;
+        }
+   }
+
+/*==================FEATURE==========================*/
+
+.our{
+        display: flex;
+        flex-direction: row ;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 60px 0px 60px 0px;
+}
+
+.our h2 , .our p {
+                        padding-left: 20px;
+}
+
+.our p{
+                font-size: medium;
+                text-align: justify;
+                color: rgba(187, 187, 187, 0.847);
+                font-weight: 100;
+                line-height: 25px;
+                margin-top: -130px;
+}
+.our img{
+                width: 420px;
+                border-radius: 6px 6px 0px 0px ;
+}
+
+.feature{
+                background-color: rgba(210, 210, 210, 0.372) ;
+                border-radius: 6px 6px 6px 6px ;
+                transition: all 1s ease-in-out;
+                                
+}
+
+.feature span{
+                padding-left: 150px;
+                margin-top: -20px;
+                color: #d2d0d085;
+                font-size: 140px;
+}
+.feature:hover{
+                        box-shadow : 1px 2px 5px 1px #87808094 ;
+                        background-color: white;
+}
+
+.feature:hover h2 {
+                        color: rgb(66, 180, 112) ;
+}
+
+/*----------------------------animation--------------------*/
+
+.our{
+        animation-name: our;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+}
+
+@keyframes our{
+        from{
+                transform: translatey(30px);
+                opacity: 0;
+                }
+
+        to{
+                transform: translatey();
+                opacity: 1;
+        }
+   }
+
+/*======================END-ABOUT==========================*/
+
+.action{        
+                background-image: linear-gradient(rgba(0, 0, 0, 0.543) , rgba(0, 0, 0, 0.72) ) , url("../img/cta-bg.jpg");
+                background-attachment: fixed;
+                background-size: cover;
+                text-align: center ;
+                background-position: center;
+                margin: 50px 0px 80px 0px;
+                padding: 40px 0px 50px 0px ;
+}
+
+
+.action h1 {
+                color: white ;
+}
+
+.action p{
+                font-size: 17px ;
+                color: white ;
+
+}
+
+.action button{   
+        padding: 8px 30px ;
+        color: azure ;
+        font-size: large ;
+        font-weight: bold ;
+        border : 2px solid white ;
+        border-radius : 5px ;
+        background-color: transparent ;
+        transition: all 0.3s ease-in-out ;
+        cursor: pointer;
+}
+
+.action button:hover{ 
+             background-color:  rgb(66, 180, 112) ;
+             border : 2px solid rgb(66, 180, 112) ;
+}  
+/*----------------------------animation-----------------*/
+
+.action h1 , .action p , .action button{
+        animation-name: action;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+}
+
+@keyframes action{
+        from{
+                transform: scale(0);
+                opacity: 0;
+                }
+
+        to{
+                transform: scale(1);
+                opacity: 1;
+        }
+   }
+/*======================SERVICES==========================*/
+
+.services{
+                margin: 80px 0px 50px 0px;
+                text-align: center;
+}
+
+.services h1{
+        font-size: 50px;
+        color: rgba(149, 149, 149, 0.233);
+}
+
+.services h2{
+        color: #42b470;
+        font-size: 30px;
+        margin-top: -62px;
+}
+
+.services p{
+                color: rgb(149, 149, 149);
+                font-size: medium;
+                text-align: center;
+}
+
+.ser span{
+        font-size: 50px;
+        font-weight: 300;
+        float: left;
+        margin-top: -5px;
+        margin-left: -60px;
+        cursor: pointer;
+}
+
+
+
+.ser{
+        display: grid ;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto auto;
+        gap : 90px 40px ;
+        padding-left: 150px;
+        margin-bottom: 100px ;
+}
+
+/*----------------------------animation-----------------*/
+
+.services h1 , .services h2 , .services p{
+        animation-name: services;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+}
+
+@keyframes services{
+        from{
+                transform: translatey(-10px);
+                opacity: 0;
+                }
+
+        to{
+                transform: translatey(30px);
+                opacity: 1;
+        }
+   }
+
+.ser div{
+        animation-name: ser-div;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+}
+
+@keyframes ser-div{
+        from{
+                transform: translatey(25px);
+                opacity: 0;
+                }
+
+        to{
+                transform: translatey(0px);
+                opacity: 1;
+        }
+   }
+/*======================PORTFOLIO==========================*/
+
+.portfolio{
+        padding: 60px 0px 20px 0px;
+        background-color: #f3faf6;
+        text-align: center;
+}
+
+.portfolio h1{
+        font-size: 50px;
+        color: rgba(149, 149, 149, 0.233);
+}
+
+.portfolio h2{
+        color: #42b470;
+        font-size: 30px;
+        margin-top: -62px;
+}
+
+.portfolio p{
+        color: rgb(149, 149, 149);
+        font-size: medium;
+        text-align: center;
+}
+
+.all{
+        text-align: center;
+        background-color: #f3faf6;
+        
+}
+
+.all p{
+                display: inline-block;
+                padding: 0px 15px;
+                font-size: 15px;
+}
+
+.all p:hover{
+                        color: rgb(66, 180, 112)  ;
+}
+
+.portimage{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-template-rows: auto auto auto ;
+                background-color: #f3faf6;
+                text-align: center;
+                gap: 30px 0px;
+                padding: 20px 0px 100px 30px;
+}
+
+.img{   width: 440px;
+        height: 350px;
+        border-radius: 5px;              
+}
+
+
+
+
+
+.port1{
+                background-image: url(../img/portfolio/portfolio-1.jpg);
+                background-position: center;
+                background-size: cover;
+}
+
+.port2{
+                background-image: url(../img/portfolio/portfolio-2.jpg);
+                background-position: center;
+                background-size: cover;
+}
+
+.port3{
+                background-image: url(../img/portfolio/portfolio-3.jpg);
+                background-position: center;
+                background-size: cover;
+}
+
+.port4{
+                background-image: url(../img/portfolio/portfolio-4.jpg);
+                background-position: center;
+                background-size: cover;
+}
+
+.port5{
+                background-image: url(../img/portfolio/portfolio-5.jpg);
+                background-position: center;
+                background-size: cover;
+}
+
+.port6{
+                background-image: url(../img/portfolio/portfolio-6.jpg);
+                background-position: center;
+                background-size: cover;
+}
+
+.port7{
+                background-image: url(../img/portfolio/portfolio-7.jpg);
+                background-position: center;
+                background-size: cover;
+}
+
+.port8{
+                background-image: url(../img/portfolio/portfolio-8.jpg);
+                background-position: center;
+                background-size: cover;
+}
+
+.port9{
+                background-image: url(../img/portfolio/portfolio-9.jpg);
+                background-position: center;
+                background-size: cover;
+}
+
+.portimg{
+        width: 440px;
+        height: 350px;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        margin-top: -19px;
+        background: linear-gradient(rgba(0, 0, 0, 0.545) , rgba(0, 0, 0, 0.545) ) ;
+        opacity: 0;  
+}
+
+.portimg:hover{
+        opacity: 1;
+        animation: hover .2s ease-in-out;
+}
+
+@keyframes hover {
+        from{
+        transform: scale(0);
+        opacity: 0;
+        }
+        to{
+        transform: scale(1) ;
+        opacity: 1;
+        }
+}
+
+.portimage h3{
+                padding-top: 150px;
+}
+
+.portimage i{
+                font-size: 20px;
+                margin: 0px 5px;
+                cursor: pointer;
+}
+
+.portimage i:hover{
+                color: rgb(66, 180, 112);
+                transition: all 0.5s ease-in-out;
+}
+
+/*----------------------------animation-----------------*/
+
+.portfolio h1 , .portfolio h2 , .portfolio p{
+        animation-name: services;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+}
+
+@keyframes services{
+        from{
+                transform: translatey(-40px);
+                opacity: 0;
+                }
+
+        to{
+                transform: translatey(0px);
+                opacity: 1;
+        }
+   }
+
+   .all p{
+        animation-name: all-p;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+}
+
+@keyframes all-p{
+        from{
+                transform: translatey(30px);
+                opacity: 0;
+                }
+
+        to{
+                transform: translatey(0px);
+                opacity: 1;
+        }
+   }
+
+   .img {
+        animation-name: portimg;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+}
+
+@keyframes portimg{
+        from{
+                transform: translatey(20px);
+                opacity: 0;
+                }
+
+        to{
+                transform: translatey(0px);
+                opacity: 1;
+        }
+   }
+/*======================testimonials==========================*/
+
+
+.testimonials{
+                        background-image: linear-gradient(rgba(0, 0, 0, 0.595) , rgba(0, 0, 0, 0.621) ) , url("../img/testimonials-bg.jpg") ;
+                        background-repeat: no-repeat;
+                        background-attachment: fixed;
+                        background-size: cover ;
+                        text-align: center ;  
+                        padding: 80px 0px 120px 0px;              
+}
+
+
+.testimonials img{
+                        border: 10px solid rgba(128, 128, 128, 0.526);
+                        border-radius: 50%;
+                        width: 80px;
+}
+
+
+
+.testimonials h3{
+                        color: white;
+}
+
+
+.ceo{
+                margin-top: -10px;
+                color: rgb(201, 201, 201);
+}
+
+
+.testimonials p
+{
+                        color: rgb(201, 201, 201);
+                        font-size: 17px;
+}
+
+.testimonials i{
+                vertical-align: super;
+}
+/*--------------------------animation-----------------*/
+
+.testimonials img ,.testimonials h3 , .testimonials a , .testimonials p{
+                animation-name: testimonials;
+                animation-duration: 1.5s;
+                animation-iteration-count: 1;
+                animation-timing-function: ease-in-out;
+}
+
+@keyframes testimonials{
+        from{
+                transform: translatey(100px);
+                opacity: 0;
+                }
+
+        to{
+                transform: translatey();
+                opacity: 1;
+        }
+   }
+/*======================TEAM==========================*/
+
+.T{
+                margin: 70px 0px 0px 0px;
+                text-align: center;
+}
+
+.T h1{
+        font-size: 50px;
+        color: rgba(149, 149, 149, 0.233);
+}
+
+.T h2{
+        color: #42b470;
+        font-size: 30px;
+        margin-top: -62px;
+}
+
+
+.T p{
+                color: rgb(149, 149, 149);
+                font-size: medium;
+                text-align: center;
+                
+}
+
+.team{
+                display: flex ;
+                flex-wrap: wrap;
+                justify-content: space-evenly; 
+}
+
+.TEAM{
+                width: 300px;
+                height: 300px;
+                border-radius: 5px;
+
+}
+
+
+.team1{
+                background-image: url(../img/team/team-1.jpg);
+                background-position: center;
+                background-size: cover;
+}
+
+.team2{
+                background-image: url(../img/team/team-2.jpg);
+                background-position: center;
+                background-size: cover;
+}
+
+.team3{
+                background-image: url(../img/team/team-3.jpg);
+                background-position: center;
+                background-size: cover;
+}
+
+.team4{
+                background-image: url(../img/team/team-4.jpg);
+                background-position: center;
+                background-size: cover;
+}
+
+.TT{
+                width: 300px;
+                height: 300px;
+                color: white;
+                text-align: center;
+                border-radius: 5px;
+                background: linear-gradient(rgba(101, 101, 101, 0.28) , rgba(0, 0, 0, 0.734) ) ;
+                transition: all 1s ease-in-out;
+                margin-top: -19px;
+                opacity: 0;             
+}
+
+.TT h3{
+        padding-top: 200px;
+}
+
+.TT p{
+                margin-top: -15px;
+                font-size: 12px;
+}
+
+.TT:hover{   
+               opacity: 1;
+}
+
+.TT i{
+        font-size: 20px;
+        cursor: pointer;
+        margin: 10px 10px;
+}
+
+.TT i:hover{
+                color: rgb(66, 180, 112) ;
+                transition: all 0.5s ease-in-out;
+}
+
+/*----------------------------ANIMATION------------------*/
+
+.T h1 , .T h2 , .T p{
+        animation-name: T;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+}
+
+@keyframes T{
+        from{
+                transform: translatey(-50px);
+                opacity: 0;
+                }
+
+        to{
+                transform: translatey(0px);
+                opacity: 1;
+        }
+   }
+
+   .TEAM{
+        animation-name: TEAM;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+}
+
+@keyframes TEAM{
+        from{
+                transform: translatey(40px);
+                opacity: 0;
+                }
+
+        to{
+                transform: translatey(0px);
+                opacity: 1;
+        }
+   }
+
+   .TT:hover h3 , .TT:hover p , .TT:hover i{
+                                animation-name: TT;
+                                animation-duration: 0.5s;
+                                animation-iteration-count: 1;
+                                animation-timing-function: ease-in-out;
+   }
+
+   @keyframes TT{
+        from{
+                transform: translatey(40px);
+                opacity: 0;
+                }
+
+        to{
+                transform: translatey(0px);
+                opacity: 1;
+        }
+   }
+/*======================PRICE===================================*/
+
+.price{
+        margin: 80px 0px 0px 0px;
+        text-align: center;
+}
+
+.price h1{
+        font-size: 50px;
+        color: rgba(149, 149, 149, 0.233);
+}
+
+.price h2{
+        color: #42b470;
+        font-size: 30px;
+        margin-top: -62px;
+}
+
+.price p{
+        color: rgb(149, 149, 149);
+        font-size: medium;
+        text-align: center;
+        
+}
+
+
+.PRICE{
+                display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+                justify-content: center;
+                box-sizing: border-box;
+                margin-bottom: 60px;
+}
+
+.PRICE a{
+                font-size: 25px;
+                color: black;
+}
+
+.PRICE p{
+                color: rgb(149, 149, 149);
+                font-size: 20px;
+                margin-top: -20px;
+}
+
+.Free , .Business , .Developer{
+                                padding-top: 40px;
+
+}
+
+.Free , .Developer{
+                        width: 400px;
+                        height: 420px;
+                        margin-top: 40px;
+                        color:aliceblue;
+                        box-shadow: 0px 0px 15px rgb(201, 201, 201);
+}
+
+.Free:hover , .Developer:hover {
+                box-shadow: 0px 0px 15px rgb(66, 180, 112);
+                transition: all 0.3s ease-in-out;
+}
+
+.Business{      
+                width: 420px;
+                height: 500px;
+                background-color: rgb(66, 180, 112)  ;
+}
+
+.Business h1{
+                color: aliceblue;
+                font-size: 50px;
+}
+
+.bus-ul{
+                list-style-type: none;
+                color: aliceblue;
+                line-height: 30px;
+                text-align: left;
+                font-size: 17px;
+}
+
+.Business button{
+                        padding: 8px 25px ;
+                        text-align: center;
+                        font-size: medium;
+                        color: aliceblue;
+                        border : 2px solid aliceblue;
+                        border-radius : 5px ;
+                        background-color: transparent ;
+                        transition: all 0.3s ease-in-out ;
+                        cursor: pointer; 
+}
+
+.Business button:hover{ 
+                        background-color: aliceblue;
+                        color: rgb(66, 180, 112) ;
+}
+
+.free-ul , .dev-ul{
+                                list-style-type: none;
+                                color: rgb(149, 149, 149);
+                                line-height: 30px;
+                                text-align: left;
+                                font-size: 17px;
+}
+
+.Business a , .Business p{
+                                color: aliceblue;
+}
+
+.b {   
+        padding: 8px 25px ;
+        text-align: center;
+        font-size: medium;
+        border : 2px solid rgb(150, 145, 145) ;
+        border-radius : 5px ;
+        background-color: transparent ;
+        transition: all 0.3s ease-in-out ;
+        cursor: pointer;
+}
+        
+.b:hover{ 
+             
+        color: rgb(66, 180, 112) ;
+        border : 2px solid rgb(66, 180, 112) ;
+} 
+
+.dollor{
+                color: rgb(66, 180, 112) ; 
+                font-size: 50px;
+}
+
+.PRICE span{
+                font-size:larger;
+                margin-top: 2px;
+                vertical-align:sub;            
+}
+
+/*------------------------------ANIMATION--------------------------*/
+
+.price h1 , .price h2 , .price p{
+                animation-name: price-top;
+                animation-duration: 1s;
+                animation-iteration-count: 1;
+                animation-timing-function: ease-in-out;
+}
+
+@keyframes price-top {
+        from{
+                transform: translatey(-30px);
+                opacity: 0;
+        }
+        to{
+                transform: translatey();
+                opacity: 1;
+        }
+}
+
+.Free , .Business , .Developer{
+        animation-name: teeno-div;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+}
+
+@keyframes teeno-div{
+from{
+        transform: scale(0);
+        opacity: 0;
+}
+to{
+        transform: scale(1);
+        opacity: 1;
+}
+}
+
+/*=====================================F.A.Q========================================*/
+
+.FAQ{
+        padding: 30px 0px;
+        text-align: center;
+        background-color: #f3faf6;
+}
+
+.FAQ h1{
+                font-size: 50px;
+                color: rgba(149, 149, 149, 0.233);
+}
+
+.FAQ h2{
+                color: #42b470;
+                font-size: 30px;
+                margin-top: -62px;
+}
+
+.FAQ p{
+                color: rgb(149, 149, 149);
+}
+
+.FAQ1{
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+        row-gap: 50px;
+        background-color: #f3faf6;
+        padding-left: 240px;
+        padding-bottom: 80px;
+}
+
+.row1{
+       padding: 20px 0px 10px 10px;
+       color: #343a40;
+       width: 1000px;
+       box-shadow: 0px 2px 05px rgba(99, 97, 97, 0.497);
+       background-color: white;
+       font-weight:bolder;
+       cursor: pointer;
+}
+
+.otn:hover{
+                color: #42b470;
+                transition: all 0.5s ease-in-out;
+}
+
+.help{
+        vertical-align:middle;
+        margin-top: -2px;
+        color: #42b470;      
+}
+
+.down{
+                vertical-align: middle;
+                float:right;
+                padding: 0px 10px 12px 0px;
+                position: relative;
+                cursor: pointer;
+}
+
+.down:hover{
+                color: #42b470;
+                transition: all 0.4s ease-in-out;
+}
+.row2{
+                position: absolute;
+                top: 35px;
+                margin-left: -976px;
+                padding-left: 15px;
+                padding-bottom: 20px;
+                width: 995.6px;
+                font-size: 16px;
+                display: none;
+                text-align : justify ;
+                box-shadow: 1px 5px 5px rgba(99, 97, 97, 0.497) ;
+}
+
+.down:hover .row2{
+                        display: block;
+                        background-color: white;
+                        color: #343a40;                 
+}
+
+/*------------------------------ANIMATION--------------------------*/
+
+        .FAQ h1 , .FAQ h2 , .FAQ p{
+                animation-name: FAQ;
+                animation-duration: 1s;
+                animation-iteration-count: 1;
+                animation-timing-function: ease-in-out;
+        }
+
+        @keyframes FAQ {
+                from{
+                        transform: translatey(-60px);
+                        opacity: 0;
+                }
+                to{
+                        transform: translatey();
+                        opacity: 1;
+                }
+        }
+
+        .row1{
+                animation-name: row;
+                animation-duration: 1s;
+                animation-iteration-count: 1;
+                animation-timing-function: ease-in-out;
+        }
+
+        @keyframes row {
+                from{
+                        transform: translatey(60px);
+                        opacity: 0;
+                }
+                to{
+                        transform: translatey();
+                        opacity: 1;
+                }
+        }
+/*=====================================CONTACT========================================*/
+
+.Contact{
+        padding: 30px 0px;
+        text-align: center;
+}
+
+.Contact h1{
+                font-size: 50px;
+                color: rgba(149, 149, 149, 0.233);
+}
+
+.Contact h2{
+                color: #42b470;
+                font-size: 30px;
+                margin-top: -62px;
+}
+
+.cont{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: center;
+                column-gap: 30px;
+                padding-bottom: 30px;
+}
+
+.cont h3{      
+                color: rgb(104, 104, 104);
+}
+
+.cont p{
+                color: rgb(99, 97, 97);
+                font-size: 15px;
+                padding: 0px 0px 10px 50px;
+}
+
+.cp{
+        line-height: 20px;
+}
+
+.addrs{
+        width: 400px;
+        height: 120px;
+}
+
+.addrs , .email , .Call{        
+                                padding-left: 10px;
+                                margin-top: 20px;
+                                width: 400px;
+                                box-shadow: 0px 0px 25px rgba(99, 97, 97, 0.337) ;
+                                background-color: white;
+}
+
+.cont span{
+                 font-size:xx-large;
+                 color: #42b470;
+                 border: 2px dotted #42b470;
+                 border-radius: 50%;
+                 padding: 5px;
+                 margin-top: 2px;
+                 vertical-align:middle;            
+}
+
+.Form{  display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 50px;
+}
+
+.F1{
+                background-color: white;
+                padding: 30px 18px 30px 24px;
+                box-shadow: 0px 0px 25px rgba(99, 97, 97, 0.337) ;
+                color: #42b470;
+}
+
+.subj{
+                width: 1223px;
+                font-size: 15px;
+                padding: 10px 6px;
+                margin-bottom: 15px;
+                border: 1px solid rgba(150, 145, 145, 0.459);
+}
+
+.input{
+                width: 600px;
+                padding: 10px 5px;
+                margin: 10px 10px 15px 0px;
+                border: 1px solid rgba(150, 145, 145, 0.459);
+                font-size: 15px;
+}
+
+.F1 textarea{
+        font-size: 15px;
+        padding: 10px 5px;
+        border: 1px solid rgba(150, 145, 145, 0.459);
+        
+
+}
+
+.F1  button{   
+        padding: 10px 30px ;
+        margin-left: 530px;
+        margin-top: 15px;
+        color: white;
+        font-size: medium ;
+        background-color:  rgb(66, 180, 112) ;
+        border : 2px solid rgb(66, 180, 112) ;
+        border-radius : 5px ;
+        transition: all 0.3s ease-in-out ;
+        cursor: pointer;
+}
+
+.F1 button:hover{ 
+             background-color:  rgb(53, 168, 99) ;
+             border : 2px solid rgb(66, 180, 112) ;
+} 
+
+/*------------------------------ANIMATION--------------------------*/
+
+.Contact h1 , .Contact h2 , .Contact p{
+        animation-name: FAQ;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+}
+
+@keyframes FAQ {
+        from{
+                transform: translatey(-60px);
+                opacity: 0;
+        }
+        to{
+                transform: translatey();
+                opacity: 1;
+        }
+}
+
+.addrs , .email , .Call{
+        animation-name: teeno-div;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+}
+
+@keyframes teeno-div{
+from{
+        transform: scale(0);
+        opacity: 0;
+}
+to{
+        transform: scale(1);
+        opacity: 1;
+}
+}
+
+.F1{
+        animation-name: F1;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+}
+
+@keyframes F1 {
+        from{
+                transform: translatey(30px);
+                opacity: 0;
+        }
+        to{
+                transform: translatey();
+                opacity: 1;
+        }
+}
+
+.F1 button{
+        animation-name: F1-button;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+}
+
+@keyframes F1-button {
+        from{
+                transform: scale(0);
+                opacity: 0;
+        }
+        to{
+                transform: scale(1);
+                opacity: 1;
+        }
+}
+/*=====================================SUBSCIRBE========================================*/
+
+.subscibe{
+                
+                text-align: center;
+                color: white;
+                background-color: black;
+                padding: 40px 0px;
+}
+
+.subscibe input{
+                width: 600px;
+                margin: 10px 0px;
+                padding: 12px 5px;
+                border-radius : 4px ; 
+                color: #42b478;
+                border: 1px solid rgb(66, 180, 112);    
+}
+
+.subscibe  button{   
+        padding: 8px 30px 11px ;
+        margin-top: 1px;
+        margin-left: -139px;
+        color: white;
+        font-size: medium ;
+        background-color:  rgb(66, 180, 112) ;
+        border : 2px solid rgb(66, 180, 112) ;
+        border-radius : 0px 4px 4px 0px;
+        transition: all 0.3s ease-in-out ;
+        cursor: pointer;
+}
+
+.subscibe button:hover{ 
+             background-color:  rgb(53, 168, 99) ;
+             border : 2px solid rgb(66, 180, 112) ;
+} 
+
+/*------------------------------ANIMATION--------------------------*/
+
+.subscibe h2 , .subscibe p{
+        animation-name: subscibe;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+}
+
+@keyframes subscibe{
+        from{
+                transform: translatey(-60px);
+                opacity: 0;
+        }
+        to{
+                transform: translatey();
+                opacity: 1;
+        }
+}
+
+.subscibe input{
+        animation-name: subscibe-input;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+}
+
+@keyframes subscibe-input{
+        from{
+                transform: translatex(-400px);
+                opacity: 0;
+        }
+        to{
+                transform: translatex();
+                opacity: 1;
+        }
+}
+
+.subscibe button{
+        animation-name: subscibe-button;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+}
+
+@keyframes subscibe-button{
+        from{
+                transform: translatex(400px);
+                opacity: 0;
+        }
+        to{
+                transform: translatex();
+                opacity: 1;
+        }
+}
+/*=====================================ABOUT========================================*/
+
+.phone{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                background-color: #1b1b1b;
+                box-sizing: border-box;
+                color: #b7b7b7;
+                padding: 40px 80px;
+}
+
+.phone span{
+                color: #42b470;
+                vertical-align: middle;
+                margin-top: -1px;
+                font-size: 18px;
+}
+.phone1{        
+        box-sizing: border-box;
+        font-size: 16px;
+}
+
+.phone1 h2{
+                color: white; 
+                font-size: xx-large;  
+                font-weight: 100;           
+}
+
+.phone2 ul li{
+                list-style-type: none;
+                text-align: left;
+                margin-bottom: 15px;
+                margin-left: -40px;
+                font-size: 15px;
+}
+
+.phone2 ul li:hover{
+                        color: #42b470;
+                        transition: all 0.3s ease-in-out;
+}
+
+.phone2 h3 , .phone3 h3{
+                color: white;
+                font-size: 16px;
+}
+
+.phone3 p{
+                color: white;
+}
+
+.phone3 i{
+                padding: 10px 11px; 
+                color: white;
+                margin-right: 5px;
+                font-size: 18px;
+                background-color: #373737; 
+                border-radius: 50%;
+}
+
+.phone3 i:hover{
+                background-color: #42b470;
+                transition: all 0.3s ease-in-out;
+}
+
+/*------------------------------ANIMATION--------------------------*/
+
+.phone1 , .phone2 , .phone3{
+        animation-name: phone;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+}
+
+@keyframes phone {
+        from{
+                transform: scale(0);
+                opacity: 0;
+        }
+        to{
+                transform: scale(1);
+                opacity: 1;
+        }
+}
+/*=====================================ABOUT========================================*/
+
+.end{
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        padding: 20px 50px;
+        color: #b7b7b7;
+}
+
+.copy{          display: inline-block;
+                font-size: 15px;
+}
+
+.boot{
+                font-size: small;
+}
+
+.boot strong{
+                font-weight: 100;
+                color: #42b470;
+}
+
+.arrow{
+        position: fixed;
+        visibility: hidden;
+        opacity: 0;
+        right: 15px;
+        bottom: 15px;
+        z-index: 996;
+        background: #4eb478;
+        width: 40px;
+        height: 40px;
+        border: #42b478;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+}
+
+.arrow span{
+                color: white;
+                font-size: 25px;
+}
+
+.arrow:hover{
+                        background-color:#53b774;
+}
+.arrow.up{
+        visibility: visible;
+        opacity: 1;
+    }
+
+/*------------------------------MEDIA-MENU--------------------------*/
+
+    .media-menu{
+                display: none;
+    }
+
+/*------------------------------ANIMATION--------------------------*/
+
+.copy{
+        animation-name: copy;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+}
+
+@keyframes copy{
+        from{
+                transform: translatex(center);
+                opacity: 0;
+        }
+        to{
+                transform: translatex(start);
+                opacity: 1;
+        }
+}
+
+
+        

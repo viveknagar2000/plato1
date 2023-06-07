@@ -1,0 +1,502 @@
+@media (min-width:481px) and  (max-width:768px)
+                { 
+
+                
+              *{
+                        border: 2px solid yellow;
+              }
+                    .br{
+                            display: none;
+                    }
+
+                    .top{
+                            height: 100vh;
+                            background-attachment: scroll;
+                    }
+
+                    .top h1{
+                                font-size: 28px;
+                                padding: 260px 0px 20px;
+                    }
+
+                    .top p{
+                            font-size: large;
+                            padding-bottom: 20px;
+                    }
+                    .br-top-h1{
+                                display: none;
+                    }
+
+/*=====================================MENU-BAR========================================*/
+       
+                    .menu-bar{
+                                display: none;
+                                width: 90%;
+                                text-align: center;
+                    }
+               
+                    #menu-icon{
+                
+                                display: block;
+                                padding-top: 15px;
+                                position: relative;
+                    }
+
+                    #menu-icon:hover+ul{
+                                 display: block;
+                                 position: absolute;
+                                 top: 50px;
+                                 flex-direction: row;
+                }
+
+                .menu-bar li{
+                                width: 100%;
+                                justify-content: center;
+                }
+                     
+/*=====================================ABOUT========================================*/ 
+
+                .about-image{
+                                width: 700px ;
+                                height: 450px ;
+                                margin-left: 25px;
+                }
+
+                .p1{
+                        font-size: 16px;
+                        text-align: justify;
+                        margin-top: -15px;
+                        padding-right:  40px;
+                }
+
+
+                .pehla{
+                        margin-left: 30px;
+                        width: 300px;
+                }
+                .dusra{
+                       margin-left: 30px;
+                       width: 300px;
+                }
+
+/*=====================================ICONS========================================*/ 
+
+
+                .icons ul li img{
+                                    margin: 20px 40px;
+                }
+
+                .icons ul{
+                        padding: 0px 30px;;
+                }
+
+/*=====================================FEATURE========================================*/ 
+
+                .our{ 
+                      display: grid;
+                      grid-template-columns: auto auto;
+                      row-gap: 15px;
+                }
+
+                .our img{
+                     width: 350px;
+                }
+
+                .our p{
+                        font-size: 16px;
+                        padding-left: 10px;
+                        text-align: start;
+                }
+
+                .our h2{
+                        padding-left: 10px;
+                }
+                .feature{
+                    width: 350px;
+                }
+
+                .feature span{
+                        padding-left: 110px;
+                }
+/*=====================================SERVICES========================================*/ 
+
+                .ser{
+                        gap: 60px 50px;
+                        padding-left: 100px;
+                        
+                }
+
+                .ser div{
+                        width: 260px;
+                }
+                .ser h2{
+                        font-size: large;
+                }
+
+                .ser a{
+                        font-size: 14px;
+                        color: rgb(149, 149, 149);
+                        font-weight: 100;
+                }
+
+/*=====================================PORTFOLIO========================================*/ 
+
+                .portimage{
+                            display: grid;
+                            grid-template-columns: auto auto ;
+                            grid-template-rows: auto auto auto auto;
+                            padding-left: 25px;
+                }
+
+                .img{   
+                        width: 340px;
+                        height: 250px;             
+                }
+
+                .portimg{
+                    width: 340px;
+                    height: 250px;
+                    margin-top: 0px;
+                }
+
+                .portimage h3{
+                                padding-top: 80px;
+                                margin-top: 0px;
+                }
+
+/*=====================================TEAM========================================*/ 
+
+                .team3 , .team4{
+                                    margin-top: 40px;
+                }
+
+                .TT{
+                        margin-top: 0px;  
+                }
+
+                .TT h3{
+                        margin-top: 0px;
+                }
+/*=====================================PRICING========================================*/ 
+
+                .Business{      
+                        width: 400px;
+                        height: 420px;
+                        margin-top: 40px;
+                }
+
+/*=====================================F.A.Q========================================*/ 
+
+                .FAQ1{
+                    padding: 0px 20px 80px;
+                }
+
+                .row2{
+                        width: 696px;
+                        position: absolute;
+                        right: 0px;
+
+                }
+
+                .row2 a{
+                        font-size: 11px;
+                        text-align: justify;
+                }
+
+                .otn{
+                        font-size: small;
+                }
+
+/*=====================================CONTACT========================================*/
+
+                .cont{
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    grid-template-rows: auto auto; 
+                    padding-left: 20px;
+                }
+
+                .cont p{
+                            margin-top: -20px;
+                }
+
+                .email{
+                            width: 330px;
+                            margin-left: -370px;
+                }
+
+                .addrs{
+                        width: 330px;
+                        height: 130px;
+                }
+
+                .Call{
+                        width: 690px;
+                }
+/*=====================================FORM========================================*/ 
+                
+                .F1{
+                        margin-right: 6px;
+                }
+                .input{
+                        width: 300px;
+                        margin-left: 5px;
+                }
+
+                .subj{
+                        width: 634px;
+                }
+
+                .F1 textarea{
+                             width: 636px;
+                }
+
+                .F1  button{
+                                margin-left: 245px;
+                }
+
+/*=====================================PHONE========================================*/ 
+
+                .phone{
+                        display: grid;
+                        grid-template-columns: auto auto;
+                        grid-template-rows: auto auto;   
+                        gap: 40px 120px;
+                }
+
+}
+
+
+/*=====================================MEDIAQUERY-[ 0 TO 768]========================================*/ 
+
+@media (min-width:0px) and (max-width:480px) {
+        
+
+
+
+        .br{
+                    display: none;
+            }
+
+            
+/*=====================================TOP========================================*/
+
+        
+            .top h1{
+                        font-size: 33px;
+                        padding: 260px 0px 20px;
+            }
+
+            .top p{
+                font-size: 20px;
+                padding-bottom: 20px;
+        }
+
+        .top{
+                height: 100vh;
+                padding: 0px 50px;
+                background-attachment: scroll;
+                background-position: top;
+
+        }
+
+/*=====================================MENU========================================*/
+
+
+
+/*=====================================ABOUT========================================*/ 
+
+        .about-image{
+                        margin-left: 0px;
+        }
+
+        .p1{
+                font-size: 1rem;
+                font-weight: 100;
+                text-align: justify;
+                margin: 10px 30px 0px 0px;
+                
+        }
+
+        .about h1{
+                    font-size: 35px;
+                    margin: 10px 0px;
+        }
+      
+      .about{
+                margin: 0px;
+                padding: 0px 30px;
+        }
+
+        .pehla{
+                width: 400px;
+        }
+
+        .dusra{
+                width: 400px;
+                margin: 0px;
+        }
+
+        .about a{
+              
+        }
+     
+        
+/*=====================================ICONS========================================*/ 
+
+
+        .icons ul li img{
+                margin: 10px 25px;          
+        }
+
+        .icons ul{
+                justify-content: space-between;
+                padding: 20px 40px;
+        }
+
+/*=====================================FEATURE========================================*/ 
+
+        .feature{
+                        width: 420px;
+        }
+
+        .feature-our1{
+                        margin-top: 30px;
+        }
+
+        .feature p{
+                        padding-right: 10px;
+        }
+        .pp1{
+                padding-bottom: 15px;
+        }
+        .our{
+                display: flex;
+                flex-direction: row;
+        }
+
+/*=====================================ACTION========================================*/ 
+
+        .action{
+                padding: 60px 30px;
+                background-attachment: scroll;
+        }
+
+/*=====================================SERVICES========================================*/ 
+
+        .ser{
+                 display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                gap: 60px 40px;
+        }
+
+/*=====================================TESTIMONIALS========================================*/ 
+
+        .portimage{
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 60px;
+        }
+
+        .img{   
+                width: 340px;
+                height: 250px;             
+        }
+
+        .portimg{
+            width: 340px;
+            height: 250px;
+        }
+
+        .portimage h3{
+                padding-top: 80px;
+        }
+
+        .testimonials p{
+                padding: 0px 30px;
+        }
+
+/*=====================================TEAM========================================*/ 
+
+        .TEAM{
+                margin-top: 40px;
+        }
+
+/*=====================================PRICING========================================*/ 
+
+        .Business{      
+                width: 400px;
+                height: 420px;
+                margin-top: 40px;
+        }
+
+/*=====================================F.A.Q========================================*/ 
+
+        .FAQ1{
+            padding: 10px;
+        }
+
+/*=====================================CONTACT========================================*/
+
+        .cont{
+            display: flex;
+            flex-direction: column; 
+            padding-left: 25px;
+        }
+
+
+        .email{
+                    width: 400px;
+                    margin-left: 0px;
+        }
+
+        .addrs{
+                width: 400px;
+                height: 130px;
+        }
+
+        .Call{
+                width: 400px;
+        }
+/*=====================================FORM========================================*/ 
+        
+       .F1{
+                margin-left: 3px;
+                padding: 30px 20px 30px 28px;
+        }
+        .input{
+                width: 156px;
+                
+        }
+
+        .subj{
+                width: 334px;
+        }
+
+        .F1 textarea{
+                     width: 336px;
+        }
+
+        .F1  button{
+                        margin-left: 90px;
+        }
+
+/*=====================================FORM========================================*/ 
+
+        .subscibe input{
+                        width: 400px;
+        }
+
+/*=====================================END-ABOUT========================================*/ 
+
+        .phone{
+                display: flex;
+                flex-direction: column; 
+                gap: 40px 160px;
+        }
+
+/*=====================================ARROW-BUTTON========================================*/ 
+
+        
+}
