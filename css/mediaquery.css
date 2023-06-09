@@ -333,7 +333,63 @@
 
 /*=====================================MENU========================================*/
 
+                    .menu-bar{
+                                display: none;
+                                width: 100%;
+                                position: absolute;
+                                top: 40px;
+                                padding-right: 0px;
+                                text-align: center;
+                                background-color: white;
+                    }
 
+                    nav{
+                        position: relative;
+                    }
+               
+                    #menu-icon{
+                                display: block;
+                                padding-top: 15px;
+                                padding-right: 10px;
+                    }
+
+                    #menu-icon:hover+ul{
+                                 display: block;
+                }
+
+                .menu-bar:hover{
+                                display: block;
+                }
+
+                .menu-bar li{
+                                justify-content: center;
+                }
+
+                .menu-bar li a{
+                                color: black;
+                }
+                .menu-bar li a:hover{
+                        color:black
+                }
+                .menu-bar li:hover{
+                        background-color: rgb(66, 180, 112);
+                }
+
+                .drop-down-list{
+                        position: absolute;
+                        top: 310px;
+                        right: 0%;
+                        padding-left: 0%;
+                        width: 100%;
+                }
+
+                .deep-drop-down-list{
+                        position: absolute;
+                        top: 40px;
+                        right: 0px;
+                        padding-left: 0px;
+                        width: 100%;
+                }
 
 /*=====================================ABOUT========================================*/ 
 
