@@ -114,6 +114,10 @@ nav{
             position: relative;
     }
 
+     .menu-bar span{
+                vertical-align:middle;
+    }
+
     .menu-bar li{
             padding: 10px 15px;
             list-style: none;
@@ -122,10 +126,18 @@ nav{
     .drop-down-list{
             display: none;
             line-height: 30px;
-            background-color: rgb(177, 232, 232);
+            background-color: white;
             position: absolute;
             top: 40px;
             right: 40px;
+    }
+
+    .drop-down-list li a{
+                color: #1b1b1b;
+    }
+
+    .drop-down-list li a:hover{
+                        color: #42b470;
     }
 
     .drop-down:hover .drop-down-list{
@@ -135,7 +147,7 @@ nav{
     .deep-drop-down-list{
                
                 line-height: 30px;
-                background-color: rgb(177, 232, 232);
+                background-color: white;
                 transition: all 0.5s ease-in-out;
                 position: absolute;
                 top: 54px;
